@@ -1,0 +1,36 @@
+% !TEX program = xelatex
+% main.tex
+\documentclass[11pt]{beamer}
+\input{~/.config/tex/config-beamer.tex}
+ 
+\large
+
+\newcommand{\Institution}{中国科学院大学网络空间安全学院}
+\newcommand{\studentName}{姜俊彦}
+\newcommand{\studentNumber}{2022K8009970011}
+\newcommand{\studentEmail}{jiangjunyan22@mails.ucas.ac.cn}
+
+\newcommand{\preTitile}{}
+\newcommand{\preSubtitle}{}
+% \newcommand{\preDate}{xxxx年xx月xx日}
+
+\title{\preTitile}
+\subtitle{\preSubtitle}
+\author{\studentName}
+\institute{\Institution}
+% \date{\preDate}
+ 
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+  \frametitle{目录}
+  \tableofcontents
+\end{frame}
+
+
+ 
+\subfile{./sections/s1.tex}
+
+
+\end{document}
