@@ -1,0 +1,67 @@
+% \documentclass[11pt]{article}
+\usepackage[a4paper]{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+\PassOptionsToPackage{quiet}{fontspec}
+
+\usepackage[UTF8]{ctex}
+\usepackage{silence}
+\WarningFilter{latexfont}{Font shape}
+\WarningFilter{latexfont}{Size substitutions with differences}
+
+% font
+\usepackage{fontspec}
+\usepackage{fontsize}
+
+% subfile
+\usepackage{subfiles}
+
+% math
+\usepackage{amsmath,amsfonts,graphicx,subfigure,amssymb,bm,amsthm,mathrsfs,mathtools,breqn}
+% algorithm
+\usepackage{algorithm,algorithmicx}
+\usepackage[noend]{algpseudocode}
+
+% header and footer
+\usepackage{fancyhdr}
+\usepackage[colorlinks=false]{hyperref}
+
+% mdframed
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{xcolor}
+
+
+\usepackage{adjustbox}
+
+
+% table
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{paralist}
+
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{bigstrut,rotating}
+\usepackage{wrapfig}
+\usepackage{float}
+
+% section
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{minted}
+
+\setmonofont{SpaceMono Nerd Font}
+\setminted{
+	linenos=false,
+	breaklines=true,
+	breakanywhere=true,
+	fontsize=\footnotesize,
+}
+
+
+\setlength{\parindent}{2em}
+\everymath{\displaystyle}
