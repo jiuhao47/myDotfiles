@@ -1,6 +1,6 @@
 -- Setup Lsp.
 local capabilities = require("lvim.lsp").common_capabilities()
-require("lvim.lsp.manager").setup("vscode-json-language-server", {
+require("lvim.lsp.manager").setup("jsonls", {
 	on_attach = require("lvim.lsp").common_on_attach,
 	on_init = require("lvim.lsp").common_on_init,
 	capabilities = capabilities,

@@ -17,6 +17,13 @@ table.insert(lvim.plugins, {
 			temperature = 0,
 			max_tokens = 4096,
 		},
+		copilot = {
+			-- model = "claude-3.7-sonnet",
+			temperature = 0,
+			max_tokens = 128000,
+			-- model = "claude-3.5-sonnet",
+			-- model = "gemini-2.0-flash-001",
+		},
 		---Specify the special dual_boost mode
 		---1. enabled: Whether to enable dual_boost mode. Default to false.
 		---2. first_provider: The first provider to generate response. Default to "openai".
@@ -100,7 +107,7 @@ table.insert(lvim.plugins, {
 				focus_on_apply = "ours", -- which diff to focus after applying
 			},
 		},
-    
+
 		highlights = {
 			---@type AvanteConflictHighlights
 			diff = {
