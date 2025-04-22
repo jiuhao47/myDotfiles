@@ -56,12 +56,19 @@
 
 \setmonofont{SpaceMono Nerd Font}
 \setminted{
-	linenos=false,
-	breaklines=true,
-	breakanywhere=true,
-	fontsize=\footnotesize,
+  linenos=false,
+  breaklines=true,
+  breakanywhere=true,
+  fontsize=\footnotesize,
 }
 
+\usepackage{minted}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
 
 \setlength{\parindent}{2em}
 \everymath{\displaystyle}
+
+\hyphenpenalty=5000
+\tolerance=1000

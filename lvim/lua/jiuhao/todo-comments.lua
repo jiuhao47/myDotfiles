@@ -58,7 +58,7 @@ table.insert(lvim.plugins, {
 			yellow = { "DiagnosticDone", "#FFCC00" },
 		},
 		search = {
-			command = "gg",
+			command = "rg",
 			args = {
 				"--color=never",
 				"--no-heading",
