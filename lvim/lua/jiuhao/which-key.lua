@@ -18,6 +18,10 @@ local personal_keybindings = {
 		a = { "Chat Side Bar Toggle" },
 		r = { "Chat Side Bar Refresh" },
 		f = { "Chat Side Bar Focus Switch" },
+		h = { "Select between chat histories" },
+		S = { "Stop current AI request" },
+		["?"] = { "Select model" },
+
 		-- v = { "Visual" },
 		-- q = { "Quick Start" },
 		-- i = { "Ask Directly" },

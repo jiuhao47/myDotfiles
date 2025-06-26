@@ -1,3 +1,3 @@
 table.insert(lvim.plugins, {
-	"AckslD/swenv.nvim",
+	"stevearc/dressing.nvim",
 })

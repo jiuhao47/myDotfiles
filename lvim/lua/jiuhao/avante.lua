@@ -7,6 +7,7 @@ table.insert(lvim.plugins, {
 	opts = {
 		---@alias Provider "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
 		provider = "copilot", -- Recommend using Claude
+    mode = "agentic",
 		-- WARNING: Since auto-suggestions are a high-frequency operation and therefore expensive,
 		-- currently designating it as `copilot` provider is dangerous because: https://github.com/yetone/avante.nvim/issues/1048
 		-- Of course, you can reduce the request frequency by increasing `suggestion.debounce`.
@@ -18,11 +19,12 @@ table.insert(lvim.plugins, {
 			max_tokens = 4096,
 		},
 		copilot = {
-			-- model = "claude-3.7-sonnet",
+			-- model = "claude-sonnet-4",
 			temperature = 0,
 			max_tokens = 128000,
 			-- model = "claude-3.5-sonnet",
 			-- model = "gemini-2.0-flash-001",
+			-- model = "gemini-2.5-pro-preview-03-25",
 		},
 		---Specify the special dual_boost mode
 		---1. enabled: Whether to enable dual_boost mode. Default to false.
