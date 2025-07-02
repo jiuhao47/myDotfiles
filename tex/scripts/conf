@@ -1,0 +1,33 @@
+#!/bin/bash
+
+conference=$1
+
+built_in_conference=(usenix sp)
+
+show_help(){
+    echo "Usage: conf <conference>"
+    echo ""
+    show_built_in_conference_info
+}
+
+show_built_in_conference_info() {
+    echo "Built-in Conferences: ${built_in_conference[@]}"
+}
+
+# check if conference is set
+if [[ -z "$conference" ]]; then
+    show_help
+    exit 1
+fi
+
+if [[ ! " ${built_in_conference[@]} " =~ " ${conference} " ]]; then
+    echo "Error: Unsupported conference '$conference'"
+    show_built_in_conference_info
+    exit 1
+fi
+
+cp -r ~/.config/tex/conference/$conference .
+cd $conference
+git init
+git add .
+git commit -m "Initial commit for $conference"
