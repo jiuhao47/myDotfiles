@@ -19,12 +19,15 @@ pacman_dependencies=(
     mdbook
     yazi
     htop
+    ninja
+    just
 )
 
 aur_dependencies=(
     neofetch
     lazygit
-    sysz
+    sysz    
+    clangd
     # lazydocker
 )
 
