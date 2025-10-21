@@ -21,6 +21,10 @@ pacman_dependencies=(
     htop
     ninja
     just
+    nvim
+    ncdu
+    # latexindent
+    # perl-yaml-tiny
 )
 
 aur_dependencies=(
