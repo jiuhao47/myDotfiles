@@ -1,0 +1,54 @@
+%Information to be included in the title page:
+\PassOptionsToPackage{quiet}{fontspec}
+
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{subfiles}
+
+\AtBeginDocument{\usebeamerfont{normal}}
+\newfontfamily\normal{Times New Roman}
+\setmonofont{SpaceMono Nerd Font}
+
+\usepackage{amsmath,amsfonts,graphicx,subfigure,amssymb,bm,amsthm,mathrsfs,mathtools,breqn}
+
+\usepackage{algorithm,algorithmicx}
+\usepackage[noend]{algpseudocode}
+
+\usepackage{fancyhdr}
+
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{xcolor}
+
+\usepackage{adjustbox}
+
+
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{paralist}
+
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{bigstrut,rotating}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+
+\usepackage{minted}
+\setminted{
+	linenos=false,
+	breaklines=true,
+	breakanywhere=true,
+	fontsize=\footnotesize,
+}
+
+\usefonttheme[onlymath]{serif}
+
+
+\everymath{\displaystyle}
+\usetheme{Berlin}
+\usecolortheme{dolphin}

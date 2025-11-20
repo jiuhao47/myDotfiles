@@ -1,0 +1,51 @@
+\documentclass[letterpaper,twocolumn,10pt]{article}
+\usepackage{usenix}
+\input{config.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\anonymoustrue % Comment this line to turn off anonymity
+\showcommentstrue % Comment this line to turn off comments
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%don't want date printed
+\date{}
+
+\Title{Formatting Submissions for a USENIX Conference:\\
+   An (Incomplete) Example}
+
+\input{infos/infos.tex}
+
+\maketitle
+
+\begin{abstract}
+Your abstract text goes here. Just a few facts. Whet our appetites.
+Not more than 200 words, if possible, and preferably closer to 150.
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/1-introduction.tex}
+This is a test citations \cite{petsios2017nezha}.
+
+\jjy{This is a test comment}
+\input{sections/2-background.tex}
+\input{sections/3-motivation.tex}
+\input{sections/4-design.tex}
+\input{sections/5-evaluation.tex}
+\input{sections/6-casestudy.tex}
+\input{sections/7-relatedwork.tex}
+\input{sections/8-futurework.tex}
+\input{sections/9-conclusion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+\bibliography{bibs/main}
+\input{sections/10-appendix.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

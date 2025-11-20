@@ -1,0 +1,49 @@
+% !TEX program = xelatex
+% main.tex
+\documentclass[11pt]{article}
+% \input{~/personal/document/texbox/.config/config-test.tex}
+\input{~/.config/tex/config.tex}
+\large
+\newcommand{\Institution}{中国科学院大学网络空间安全学院}
+\newcommand{\className}{}
+\newcommand{\classTeacher}{}
+\newcommand{\documentType}{}
+\newcommand{\semester}{}
+\newcommand{\studentName}{姜俊彦}
+\newcommand{\studentNumber}{2022K8009970011}
+\newcommand{\studentEmail}{jiangjunyan22@mails.ucas.ac.cn}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\lhead{\semester}
+\chead{\className}
+\rhead{\classTeacher}
+ 
+\begin{document}
+
+\begin{center}
+	\huge \Institution
+
+	\className
+
+	\LARGE \documentType
+
+	\large \kaishu
+
+	\studentName
+
+	\studentNumber
+
+	\studentEmail
+
+
+\end{center}
+
+\tableofcontents
+
+\newpage
+
+\input{./sections/s1.tex}
+
+
+\end{document}
